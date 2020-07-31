@@ -16,6 +16,8 @@ jobs:
         repository: ralfg/hello_py
         ref: v0.1.0
         path: hello_py
+    - run: |
+          docker run --rm --privileged hypriot/qemu-register
     - name: Build manylinux Python wheels
       uses: './test_action'
       with:
