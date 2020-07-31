@@ -23,7 +23,7 @@ jobs:
       with:
         python-versions: 'cp38-cp38'
         build-requirements: 'setuptools numpy cython'
-        system-packages: 'lrzip-devel zlib-devel'
+        system-packages: 'zlib-devel'
         pre-build-command: 'echo Hello world! Testing pre-build command'
         package-path: 'hello_py'
     - name: Setup Python environment
